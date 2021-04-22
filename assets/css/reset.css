@@ -1,0 +1,147 @@
+html {
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 16px;
+        -webkit-text-size-ajust: 100%; /* ayuda a que no se deforme la tipografia en los navegadores*/
+        -moz-text-size-ajust: 100%; /* ayuda a que no se deforme la tipografia en los navegadores*/
+        -ms-text-size-ajust: 100%; /* ayuda a que no se deforme la tipografia en los navegadores*/
+        text-size-ajust: 100%;
+	text-align: center;
+	background-color: #FFF;
+	color: #000;
+}
+
+body{
+    overflow-x: hidden; /*Los contenedores no deben de sobrepasar el tamaño del body si lo hacen tendrán que ocultarse*/
+}
+
+*, *::after, *::before {
+        -moz-box-sizing: inherit;
+        -ms-box-sizing: inherit;
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+a { color: #EECF27; }
+
+a:hover { color: #CCC; }
+
+h1 { 
+    font-size: 32px; /*Cuando el Navegador no soporta los rem*/
+    font-size: 2rem; 
+}
+
+h2 { 
+    font-size: 28px; /*Cuando el Navegador no soporta los rem*/
+    font-size: 1.75rem; 
+}
+
+h3 { 
+    font-size: 24px; /*Cuando el Navegador no soporta los rem*/
+    font-size: 1.5rem; 
+}
+
+h4 { 
+    font-size: 20px; /*Cuando el Navegador no soporta los rem*/
+    font-size: 1.25rem; 
+}
+
+h5, a, bbr, b, code, dfn, em, i, li, mark, p, pre, strong { 
+    font-size: 16px; /*Cuando el Navegador no soporta los rem*/
+    font-size: 1.0rem; 
+}
+
+h6, small { 
+    font-size: 12px; /*Cuando el Navegador no soporta los rem*/
+    font-size: 0.75rem; 
+}
+
+li {
+    margin-left: 16px;
+    margin-left: 1rem;
+    list-style-type: inherit;
+    list-style-position: inside;
+}
+
+abbr, dfn, em, i {
+    font-style: italic;
+}
+
+b, strong{
+    font-weight: bold;
+}
+
+code, pre{
+    font-family: monospace;
+}
+
+mark{ background-color: yellow;}
+
+hr{
+    margin: 16px auto;
+    margin: 1rem auto;
+    width: 100%;
+    border: thin solid #000;
+}
+ 
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+/*Recomendaciones responsive para nuestros medios flexibles*/
+
+audio, canvas, img, iframe, picture, progress, svg, video{
+    display: inline-block;
+    vertical-align: baseline; /*Alineación del medio con base al padre en la linea base del padre*/
+    width: 100%;
+    max-width: 100%;
+    height: auto;        
+}
+
+/*Estilos para elementos de formulario*/
+
+button, input, optgroup, option, select, textarea{
+    padding: 4px;
+    padding: .25rem;
+    font-family: inherit;
+    font-size: 16px;
+    font-size:1rem;
+    border: thin solid #000;
+}
+
+/*Hacemos que el apuntador cambie a una manita cuando se trate de elementos de formulario*/
+button, input[type="button"], input[type="submit"], input[type="reset"], input[type="checkbox"], input[type="radio"], label, select{
+    cursor: pointer;
+}
+
+/*Cuando el elemnto de input este desabilitado*/
+*[disabled]{
+    cursor: default;
+    color: #999;
+    background-color: #DDD;
+}
+
+/*Evita que se pueda cambiar el tamaño de la caja de texto*/
+textarea{ resize: none;}
+
+/*::selection es un pseudoelemento que hace que cuando seleccionamos texto o algún otro elemento el "marcado" cambie su estética*/
+/*Los colores a continuación son colores neutros*/
+::-moz-selection{
+    color: #FFF; /*color de la letra*/
+    background-color: #CCC; /*color de fondo*/
+}
+
+::selection{
+    color: #FFF;
+    background-color: #CCC;
+}
+

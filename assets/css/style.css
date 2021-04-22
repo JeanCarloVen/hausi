@@ -1,0 +1,103 @@
+@font-face{   
+   font-family: 'metropolis-black';
+   src: url('../fonts/Metropolis-Black.woff2') format('woff2'), 
+       url('../fonts/Metropolis-Black.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   
+}
+
+.allvh{
+    min-height: 100vh;
+}
+
+.fixed-top{
+   padding-top: 6rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #DCC7AA;
+    
+}
+
+.header a{
+    color: #F78830;
+    text-decoration: none;
+        
+}
+
+.logo{
+    width: 4rem;
+    height: 4rem;
+    text-indent: 9999px; 
+    background: transparent url("../img/hausi_logo_500x500.png") no-repeat left;
+    background-size: contain; 
+}
+
+body{
+    background-color: #DCC7AA;
+    font-family: "metropolis-black";
+}
+.boton-beneficios{
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#333333;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#F7C331;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-radius:35px;
+}
+
+.figura-3d{
+    max-width: 50%;
+}
+
+.font-color{
+    color: #687A8F;
+}
+
+@media screen and (min-width: 64em){
+    .main{
+        margin-top: 6rem;
+    }
+}
+
+iframe{
+    height: 16rem;
+    border: none;
+}
+
+.square-service{
+    height: 20rem;
+}
+
+.square{
+    height: 16rem;
+}
+
+.top-left{
+    background-color: #FF6161;
+}
+
+.top-right{
+    background-color: #536EB7;
+}
+
+.bottom-left{
+    background-color: #F2BF5E;
+}
+
+.bottom-right{
+    background-color: #75CBA8;
+}
+    
