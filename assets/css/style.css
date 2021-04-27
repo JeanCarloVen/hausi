@@ -7,6 +7,43 @@
    
 }
 
+.paleta-colores{
+/*      color: #687A8F; azul*/
+/*      color: #F7C331 boton naranja*/
+/*      color: #F28F3A logo naranja*/
+
+/*Paleta A:
+#687A8F
+#71A682
+#8A8866
+#76697A
+#C7A69E
+
+
+Paleta B:
+#DB2A94
+#8987ED
+#DED652
+#4DFF7E*/
+}
+
+.color-01{
+    color: #687A8F;
+}
+.color-02{
+    color: #71A682;
+}
+.color-03{
+    color: #8A8866;
+}
+.color-04{
+    color: #76697A;
+}
+.color-05{
+    color: #C7A69E;
+}
+
+
 .allvh{
     min-height: 100vh;
 }
@@ -21,7 +58,7 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: #DCC7AA;
+    background-color: #ffffff;
     
 }
 
@@ -40,7 +77,6 @@
 }
 
 body{
-    background-color: #DCC7AA;
     font-family: "metropolis-black";
 }
 .boton-beneficios{
@@ -58,12 +94,32 @@ body{
     border-radius:35px;
 }
 
+.text-inicial{
+    min-height: 50vh;
+}
+
+
+.space-rectangule{
+    height: 10px;
+    width: 60%;
+    background-color: #71A682;
+}
+
+.text-inicial p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .figura-3d{
     max-width: 50%;
 }
 
 .font-color{
     color: #687A8F;
+}
+
+.font-color-bk{
+    color: #ffffff;
 }
 
 @media screen and (min-width: 64em){
@@ -86,18 +142,71 @@ iframe{
 }
 
 .top-left{
-    background-color: #FF6161;
+    background-color: #76697A;
 }
 
 .top-right{
-    background-color: #536EB7;
+    background-color: #C7A69E;
 }
 
 .bottom-left{
-    background-color: #F2BF5E;
+    background-color: #71A682;
 }
 
 .bottom-right{
-    background-color: #75CBA8;
+    background-color: #687A8F;
 }
     
+
+.ventajas{
+    min-height: 90vh;
+}
+
+
+.ventajas-img{
+    max-width: 30%;
+}
+
+.ventajas-img-opc{
+    max-width: 20%;
+}
+
+
+.ejem-site{
+    padding: 1rem;
+    border-width: thick;
+    border-style: solid;
+    border-color: #F78830;
+    border-radius: 1rem;
+}
+
+.tarjeta{
+    margin-top: 0px;
+}
+
+.tarjeta-content{
+    background-color: #DACAB4;
+    border-radius: 1rem;
+}
+
+.cotizador{
+    min-height: 50vh;
+}
+
+.cotizador-box{
+    background-color: #F78830;
+    width: 60%;
+}
+.cotizador-img{
+    width: 50%;
+}
+
+.cotizador-box a{
+    text-decoration: none;
+}
+
+
+footer{
+    height: 40vh;
+    background-color: #687A8F;
+}

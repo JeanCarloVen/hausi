@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="<?=base_url?>assets/css/grid.css">
         <link rel="stylesheet" href="<?=base_url?>assets/css/layout.css">
         <link rel="stylesheet" href="<?=base_url?>assets/css/nav.css">
+        <link rel="stylesheet" href="<?=base_url?>assets/css/flexslider.css">
         <link rel="stylesheet" href="<?=base_url?>assets/css/style.css">
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     </head>
@@ -26,10 +27,9 @@
             <nav class="item  ph12  md8  i-b  v-middle  center  md-right  p0  menu" id="menu" role="navigation">
                 <ul>
                     <li class="nobullet"><a class="item" href="#home">Inicio</a></li>
-                    <li class="nobullet"><a class="item" href="#muestra">Muestra</a></li>
-                    <li class="nobullet"><a class="item" href="#comparacion">Comparación</a></li>
                     <li class="nobullet"><a class="item" href="#servicios">Servicios</a></li>
-                    <li class="nobullet"><a class="item" href="#servicios">Cotiza</a></li>
+                    <li class="nobullet"><a class="item" href="#tu_sitio">Tu sitio</a></li>
+                    <li class="nobullet"><a class="item" href="#cotizador">Cotiza</a></li>
                     <li class="nobullet"><a class="item" href="#contactos">Contactos</a></li>
                 </ul>
             </nav> 
