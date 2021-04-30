@@ -3,11 +3,10 @@
     $importe = '';
     if($_POST){
         if($_POST['zona'] != 0 && $_POST['numHabitaciones'] != 0 && $_POST['numEspaciosAbiertos'] != 0){
-
                 //Precios por zona
                 $zona= $_POST['zona'];
-                //Numero de habitaciones;
-                $numHab = $_POST['numHabitaciones'];
+                //Numero de espacios cerrados;
+                $numHab = $_POST['numEspacios cerrados'];
                 $precioHab = 800;
 
                 //Numero de Espacios Abiertos;
@@ -45,14 +44,12 @@
     }    
 ?>
 <section class="container  allvh  fixed-top  cotizador-site" id="cotizador-site">
-    <h1 class="f3  m1  font-color">Cotizador</h1>
-    <div class="container  flex  flex-wrap">
+    <h1 class="f3  m1  font-color">Cotizador del Tour Virtual</h1>
+    <div class="container  flex  flex-wrap  center">
         <!--mapa de cobertura-->
-        <div class="item  ph12  sm4  md4  lg4 flex-auto">
-            <img class="m1" src="<?=base_url?>assets/img/mapHausi.png" alt="Mapa de Hausi">
-        </div>
+        <img class="item  ph12  sm6  md6  lg5  m1  border-cotizador  mapHausi  flex-auto" src="<?=base_url?>assets/img/mapHausi.png" alt="Mapa de Hausi">
         <!-- Vista Lateral--> 
-        <aside class="item ph12  sm8  md8  lg8  flex-auto">
+        <aside class="item  ph12  sm6  md6  lg7  m1  border-cotizador  left  flex-auto">
         <form action="" method="POST">
             <h2> Seleccione la Zona</h2>
             <select name="zona">
@@ -63,7 +60,7 @@
                 <option value="4">Poniente</option> }
             </select>    
             <br><br>
-            <h2> Selecciona el número de habitaciones</h2>            
+            <h2> Selecciona el número espacios cerrados</h2>            
             <select name="numHabitaciones">
                 <option value="0">Seleccione..</option> 
                 <option value="1">1</option> 
@@ -83,7 +80,7 @@
                 <option value="15">15</option>
             </select>
             <br><br>
-            <h2> Selecciona el numero de espacios abiertos</h2>
+            <h2> Selecciona el número de espacios abiertos</h2>
             <select name="numEspaciosAbiertos">
                 <option value="0">Seleccione..</option> 
                 <option value="1">1</option> 
@@ -95,20 +92,24 @@
                 <option value="7">7</option> 
                 <option value="8">8</option>
                 <option value="9">9</option>
+                <option value="9">10</option>
+                <option value="9">11</option>
+                <option value="9">12</option>
+                <option value="9">13</option>
+                <option value="9">14</option>
+                <option value="9">15</option>
             </select>
             <br><br>
             <input type="submit" value="cotizar">
         </form>
         <br><br>
-        <?php echo isset($importeFormat) ? "El importe será de : $ ".$importeFormat : ''?>
+        <?php echo isset($importeFormat) ? "Importe sólo del tour virtual* : $ ".$importeFormat : ''?>
+        <div>
+            <h6>Espacios cerrados son habitaciones, pasillos, cuartos de estudio, cocinas, etc. </h6>
+            <h6>Espacios abiertos son jardines, patios, techos, azoteas, etc</h6>
+            <h6>*El importe no considera fotos, fotos 360°, narración e implementación AR</h6>
+        </div>
         </aside>
     </div>
+    <h3 class="m1  font-color">Agrega al tour fotos y narración profesional</h3>
 </section>
-<footer>
-    <!--Datos del Negocio-->
-</footer>
-
-<script src="<?=base_url?>assets/js/jquery-3.6.0.min.js"></script>
-<script src="<?=base_url?>assets/js/myscripts.js"></script>
-</body>
-</html>

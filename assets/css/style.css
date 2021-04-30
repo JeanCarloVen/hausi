@@ -190,7 +190,7 @@ iframe{
 }
 
 .cotizador{
-    min-height: 50vh;
+    min-height: 60vh;
 }
 
 .cotizador-box{
@@ -207,6 +207,21 @@ iframe{
 
 
 footer{
-    height: 40vh;
+    height: 45vh;
     background-color: #687A8F;
+}
+
+.icon-img{
+    width: 2rem;
+}
+
+.mapHausi{
+    max-width: 22rem;
+}
+
+.border-cotizador{
+    border-radius: 1rem;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #687A8F;
 }

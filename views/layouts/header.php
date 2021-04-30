@@ -20,7 +20,7 @@
         <div  class="container  f0">
             <div class="item  ph12  md4  i-b  v-middle">
                 <!--Logo-->
-                <h1 class="logo">Hausi</h1> 
+                <a href="<?=base_url?>"><h1 class="logo">Hausi</h1></a>
             </div>
             <!--Begin Pattern HTML-->
             <a href="#menu" class="menu-link"><i class="fa  fa-bars  f3"></i></a>
@@ -30,7 +30,6 @@
                     <li class="nobullet"><a class="item" href="#servicios">Servicios</a></li>
                     <li class="nobullet"><a class="item" href="#tu_sitio">Tu sitio</a></li>
                     <li class="nobullet"><a class="item" href="#cotizador">Cotiza</a></li>
-                    <li class="nobullet"><a class="item" href="#contactos">Contactos</a></li>
                 </ul>
             </nav> 
 	<!--End Pattern HTML-->

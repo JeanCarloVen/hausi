@@ -76,7 +76,7 @@
 </section>
 <!--Ventajas con Hausi-->
 <section class="container  fixed-top  font-color-bk  ventajas" id="ventajas">
-    <h1  class="f3  color-01">Ventajas</h1>
+    <h1  class="f3  color-01">Beneficios</h1>
     <div class="container  flex  flex-wrap">
         <div class="item  ph12  sm6  md6  lg4  flex-auto">
             <div class="square-service  bottom-left  v-middle">
@@ -246,38 +246,8 @@
     </div>
 </div>
 </section>
-<footer class="container-fluid  font-color-bk  footer">
-    <div class="container  flex  flex-wrap  center">
-        <div class="item  ph12  sm12  md6  lg6  flex-auto">
-            <h3>About US</h3>
-            <p>
-                Vende más y más rápido
-            </p>
-        </div>
-        <div class="item  ph12  sm12  md6  lg6  flex-auto">
-            <h3>Ubicación</h3>
-            <p>
-                Reforma 956 Col. Centro.
-            </p>
-        </div>
-        <div class="item  ph12  sm12  md12  lg6  flex-auto">
-            <h3>Siguenos</h3>
-                <img title="facebook" src="">
-                <img title="instagram" src="">
-                <img title="tweeter" src="">
-            <h4>Telefono:</h4>
-            <p>55 70 74 15 16</p>
-        </div>
-    </div>
-</footer>
-        
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script defer src="<?=base_url?>assets/js/jquery.flexslider-min.js"></script>
-<script src="<?=base_url?>assets/js/flexslider.js"></script>
-<script src="<?=base_url?>assets/js/jquery-3.6.0.min.js"></script>
-<script src="<?=base_url?>assets/js/myscripts.js"></script>
-</body>
-</html>
+
+
 
 
 <!--REPENSAR PALETA DE COLORES-->
