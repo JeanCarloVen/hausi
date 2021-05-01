@@ -1,48 +1,3 @@
-<!-- Lógica --> 
-<?php
-    $importe = '';
-    if($_POST){
-        if($_POST['zona'] != 0 && $_POST['numHabitaciones'] != 0 && $_POST['numEspaciosAbiertos'] != 0){
-                //Precios por zona
-                $zona= $_POST['zona'];
-                //Numero de espacios cerrados;
-                $numHab = $_POST['numEspacios cerrados'];
-                $precioHab = 800;
-
-                //Numero de Espacios Abiertos;
-                $numEsp = $_POST['numEspaciosAbiertos'];
-                $precioEsp = 200;
-
-                //Selección de la zona
-                switch ($zona) {
-                case 1:
-                    //echo "ZONA NORTE";
-                    $precioZona = 340;
-                    break;
-                case 2:
-                    //echo "ZONA SUR";
-                    $precioZona = 300;
-                    break;
-                case 3:
-                    //echo "ZONA ORIENTE";
-                    $precioZona = 150;
-                    break;
-                case 4:
-                    //echo "ZONA PONIENTE";
-                    $precioZona = 240;
-                    break;
-                case 5:
-                    //echo "ZONA CENTRO";
-                    $precioZona = 320;
-                    break;
-                }
-
-               //Importe = (Precio por zona) + (Numero de habitaciones)*(Precio por habitación)
-               $importe = $precioZona + $numHab*$precioHab +$numEsp*$precioEsp;
-               $importeFormat = number_format($importe, 2,'.', ',');
-        }
-    }    
-?>
 <section class="container  allvh  fixed-top  cotizador-site" id="cotizador-site">
     <h1 class="f3  m1  font-color">Cotizador del Tour Virtual</h1>
     <div class="container  flex  flex-wrap  center">
@@ -50,7 +5,7 @@
         <img class="item  ph12  sm6  md6  lg5  m1  border-cotizador  mapHausi  flex-auto" src="<?=base_url?>assets/img/mapHausi.png" alt="Mapa de Hausi">
         <!-- Vista Lateral--> 
         <aside class="item  ph12  sm6  md6  lg7  m1  border-cotizador  left  flex-auto">
-        <form action="" method="POST">
+        <form action="<?=base_url?>user/cotizador_calc" method="POST">
             <h2> Seleccione la Zona</h2>
             <select name="zona">
                 <option value="0">Seleccione..</option> 
@@ -61,7 +16,7 @@
             </select>    
             <br><br>
             <h2> Selecciona el número espacios cerrados</h2>            
-            <select name="numHabitaciones">
+            <select name="numEspaciosCerrados">
                 <option value="0">Seleccione..</option> 
                 <option value="1">1</option> 
                 <option value="2">2</option>
@@ -103,13 +58,52 @@
             <input type="submit" value="cotizar">
         </form>
         <br><br>
-        <?php echo isset($importeFormat) ? "Importe sólo del tour virtual* : $ ".$importeFormat : ''?>
+        <?php echo isset($importeFormat) ? "Precio sólo del tour virtual* : $ ".$importeFormat : ''?>
         <div>
             <h6>Espacios cerrados son habitaciones, pasillos, cuartos de estudio, cocinas, etc. </h6>
             <h6>Espacios abiertos son jardines, patios, techos, azoteas, etc</h6>
-            <h6>*El importe no considera fotos, fotos 360°, narración e implementación AR</h6>
+            <h6>*El precio no considera fotos, fotos 360°, narración e implementación AR</h6>
         </div>
         </aside>
     </div>
-    <h3 class="m1  font-color">Agrega al tour fotos y narración profesional</h3>
+    <h3 class="m1  font-color">Agrega al tour fotos y narración profesional y obtén hasta un 20% descuento</h3>
+    <!--agregar enviar cotización y datos de contacto-->
+    <form class="container  flex  flex-wrap  form-cotizacion" action="../" form="">
+        <label class="item  ph6 sm6  md6  lg6  flex-auto" for="narracion">Narración</label>
+        <input class="item  ph6 sm6  md6  lg6  flex-auto" type="checkbox" value="first_checkbox">
+        <label class="item  ph6 sm6  md6  lg6  flex-auto" for="fotosHD">Fotos HD</label>
+        <input class="item  ph6 sm6  md6  lg6  flex-auto" type="checkbox" value="second_checkbox">
+        <label class="item  ph6 sm6  md6  lg6  flex-auto" for="fotosHD">Fotos 360°</label>
+        <input class="item  ph6 sm6  md6  lg6  flex-auto" type="checkbox" value="second_checkbox">
+        <label class="item  ph6 sm6  md6  lg6  flex-auto" for="fotosHD">Realidad Aumentada</label>
+        <input class="item  ph6 sm6  md6  lg6  flex-auto" type="checkbox" value="second_checkbox">
+        <div class="item  ph12 sm12  md12  lg12  flex-auto" >
+            <label for="name">Nombre</label>
+        </div>
+        <div class="item  ph12 sm12  md12  lg12  p0  flex-auto" >
+            <input type="text" name="name">
+        </div>
+        <div class="item  ph12 sm12  md12  lg12   flex-auto" >
+            <label for="mail">Correo</label>
+        </div>
+        <div class="item  ph12 sm12  md12  lg12  p0 flex-auto" >
+            <input type="email" name="mail">
+        </div>
+        <div class="item  ph12 sm12  md12  lg12  flex-auto" >
+            <label for="phone">Teléfono</label>
+        </div>
+        <div class="item  ph12 sm12  md12  lg12  p0 flex-auto" >
+            <input type="tel" name="phone">
+        </div>
+        <div class="item  ph12 sm12  md12  lg12  flex-auto" >
+            <label for="msj">Mensaje</label>
+        </div>
+        <div class="item  ph12 sm12  md12  lg12  p0  flex-auto" >
+            <textarea name="msj" placeholder="Escríbenos..."></textarea>
+        </div>
+        <div class="item  ph12 sm12  md12  lg12  p2 flex-auto" >
+            <input type="submit" value="Enviar Cotización">
+        </div>
+    </form>
+    <h3 class="m2  font-color">En menos de 2 horas nos pondremos en contacto contigo para dar seguimiento</h3>
 </section>

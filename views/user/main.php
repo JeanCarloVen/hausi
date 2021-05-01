@@ -1,27 +1,22 @@
 <!--Main Section-->
-<section class="container  allvh  fixed-top"  id="home">
-    <div class="item  ai-center  flex-auto  main">
-        <article class="container  flex  flex-wrap">
-            <div class="item  ph12  md8  flex-auto">
-                <!--Texto-->
-                <div>
-                    <h1 class="f4  color-01">Tours virtuales para tu Inmobiliaria</h1>
-                </div>
-                <div class="p2">
-                    <h3  class="color-01">Toda una nueva experiencia</h3>
-                </div>
-                <!--Boton "Beneficios"-->
-                <a class="boton-beneficios" href="#ventajas">Beneficios</a>    
+<section class="container-fluid  allvh  fixed-top" id="home"> 
+    <div class="container-fluid  flex  flex-wrap">
+        <div class="container-fluid  ai-center  p2  flex-auto  main">
+            <div>
+                <iframe class="bg-iframe" title="Tour Virtual" src="https://housiproject.000webhostapp.com/output-5/index.html" ></iframe>
             </div>
-            <aside class="item  ph12  md4  flex-auto">
-                <!--Image-->
-                <picture class="block  mauto">
-                    <source class="figura-3d" srcset="<?=base_url?>assets/img/forma_3D.webp" media="(min-width:48em)">                
-                    <img  src="<?=base_url?>assets/img/forma_3D.webp">               
-                </picture>
-            </aside>
-            
-        </article>
+            <div class="bg-main">
+                <article class="container  flex  flex-wrap  main-article">
+                    <div class="item  ph12  md8  flex-auto">
+                        <!--Texto-->
+                        <h1 class="p1 f4  font-color-bk">Tours virtuales para tu Inmobiliaria</h1>
+                        <h3  class="p1_25  color-05">Toda una nueva experiencia</h3>
+                        <!--Boton "Beneficios"-->
+                        <a class="p1  boton-beneficios" href="#ventajas">Beneficios</a>    
+                    </div>
+                </article>
+            </div>
+        </div>
     </div>
 </section>
 <section  class="container  fixed-top  text-inicial">
@@ -50,7 +45,7 @@
         <div class="item  ph12  sm12  md6  lg6  m0  flex-auto">
             <div class="square-service  top-right">
                 <h2 class="p1">Tour Virtual</h2>
-                <iframe title="Tour Virtual" src="https://housiproject.000webhostapp.com/output-5/index.html"></iframe>
+                <iframe class="iframe-servicios" title="Tour Virtual" src="https://housiproject.000webhostapp.com/output-5/index.html"></iframe>
             </div>
         </div>
         <div class="item  ph12  sm12  md6  lg6  m0  flex-auto">
@@ -69,7 +64,7 @@
         <div class="item  ph12  sm12  md6  lg6  m0  flex-auto">
             <div class="square-service  bottom-right">
                 <h2 class="p1">Realidad Aumentada</h2>
-                <iframe src="https://www.youtube.com/embed/UudV1VdFtuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="iframe-servicios" src="https://www.youtube.com/embed/UudV1VdFtuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>

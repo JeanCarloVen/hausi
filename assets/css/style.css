@@ -27,8 +27,8 @@ Paleta B:
 #4DFF7E*/
 }
 
-.color-01{
-    color: #687A8F;
+.color-01{  color: #687A8F
+  ;
 }
 .color-02{
     color: #71A682;
@@ -83,7 +83,7 @@ body{
     text-decoration:none;
     font-weight: 600;
     font-size: 20px;
-    color:#333333;
+    color: #fff;
     padding-top:15px;
     padding-bottom:15px;
     padding-left:40px;
@@ -98,6 +98,34 @@ body{
     min-height: 50vh;
 }
 
+.home{
+    background-color: red;
+}
+
+.bg-iframe{
+    position: absolute;
+    z-index: 0;
+    height: 22rem;
+    width: 100%;
+    left: 0px;
+    border: none;
+}
+
+.bg-main{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    height: 22rem;
+    width: 70%;
+    background-color: rgba(26, 26, 26, 0.4);
+    margin: 0;
+    padding: 0;
+}
+
+.main-article{
+    z-index: 2;
+    position: relative;
+}
 
 .space-rectangule{
     height: 10px;
@@ -124,11 +152,11 @@ body{
 
 @media screen and (min-width: 64em){
     .main{
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
 }
 
-iframe{
+.iframe-servicios{
     height: 16rem;
     border: none;
 }
@@ -224,4 +252,28 @@ footer{
     border-width: 5px;
     border-style: solid;
     border-color: #687A8F;
+}
+
+.label{
+    font-size: 2rem;
+    color: #71A682;
+}
+
+.input{
+    height: 2.5rem;
+    width: 60%;
+    text-align: center; 
+    color: #76697A;
+}
+
+.textarea{
+    height: 8rem;
+    width: 60%;
+    color: #76697A;
+}
+
+
+.input[type="checkbox"]{
+    background-color: red;
+    height: 1rem;
 }
