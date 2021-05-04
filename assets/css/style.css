@@ -27,8 +27,8 @@ Paleta B:
 #4DFF7E*/
 }
 
-.color-01{  color: #687A8F
-  ;
+.color-01{  
+    color: #687A8F;
 }
 .color-02{
     color: #71A682;
@@ -43,6 +43,9 @@ Paleta B:
     color: #C7A69E;
 }
 
+.color-06{
+    color: #F28F3A;
+}
 
 .allvh{
     min-height: 100vh;
@@ -95,27 +98,24 @@ body{
 }
 
 .text-inicial{
-    min-height: 50vh;
-}
-
-.home{
-    background-color: red;
+    min-height: 80vh;
 }
 
 .bg-iframe{
     position: absolute;
     z-index: 0;
-    height: 22rem;
+    height: 25rem;
     width: 100%;
     left: 0px;
     border: none;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bg-main{
     z-index: 1;
     position: absolute;
     left: 0;
-    height: 22rem;
+    height: 25rem;
     width: 70%;
     background-color: rgba(26, 26, 26, 0.4);
     margin: 0;
@@ -217,6 +217,10 @@ body{
     border-radius: 1rem;
 }
 
+.iframe-tour{
+    height: 18rem;
+}
+
 .cotizador{
     min-height: 60vh;
 }
@@ -231,6 +235,20 @@ body{
 
 .cotizador-box a{
     text-decoration: none;
+}
+
+.form-cotizacion input[type=checkbox]{
+    padding: 0px;
+    transform: scale(1.5);
+}
+
+.form-cotizacion textarea{
+    height: 10rem;
+}
+
+.input_cotizacion{
+    height: 2rem;
+    width: 45%;
 }
 
 
@@ -254,26 +272,12 @@ footer{
     border-color: #687A8F;
 }
 
-.label{
+.button_submit input[type='submit']{
+    background-color: #F7C331;
+    border: none;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    color: #FFF;
     font-size: 2rem;
-    color: #71A682;
-}
-
-.input{
-    height: 2.5rem;
-    width: 60%;
-    text-align: center; 
-    color: #76697A;
-}
-
-.textarea{
-    height: 8rem;
-    width: 60%;
-    color: #76697A;
-}
-
-
-.input[type="checkbox"]{
-    background-color: red;
-    height: 1rem;
+    
 }

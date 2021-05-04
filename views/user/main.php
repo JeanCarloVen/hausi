@@ -9,10 +9,10 @@
                 <article class="container  flex  flex-wrap  main-article">
                     <div class="item  ph12  md8  flex-auto">
                         <!--Texto-->
-                        <h1 class="p1 f4  font-color-bk">Tours virtuales para tu Inmobiliaria</h1>
-                        <h3  class="p1_25  color-05">Toda una nueva experiencia</h3>
+                        <p class="f3  sm-f3  sm-p_25  md-f3_5  md-p1  lg-f4  lg-p1_5  font-color-bk">Tours virtuales para tu Inmobiliaria</p>
+                        <p  class="p1  sm-f1_25  sm-p1_25  md-f1_5  color-05">Toda una nueva experiencia</p>
                         <!--Boton "Beneficios"-->
-                        <a class="p1  boton-beneficios" href="#ventajas">Beneficios</a>    
+                        <a class="boton-beneficios" href="#ventajas">Beneficios</a>    
                     </div>
                 </article>
             </div>
@@ -20,15 +20,15 @@
     </div>
 </section>
 <section  class="container  fixed-top  text-inicial">
-<div class="item  ph12">
-                <p class="m1  f2_5  sm-f3  md-f3  lg-f3  color-04">
-                    TOUR 360°  +  NARRACIÓN  +  FOTO 
-                </p>
-                <p class="block  mauto  space-rectangule"> </p>
-                <h2 class="m0  p0  f4  color-01">PROFESIONAL</h2>
-            </div>
+    <div class="item  ph12">
+        <h2 class="m0  p0  f3  sm-f3  md-f4  lg-f5  color-01">SOMOS ÚNICOS</h2>
+        <p class="sm-f3  md-f3  lg-f3  m1  f2_5  color-04">
+            TOUR 360°  +  NARRACIÓN  +  FOTO 
+        </p>
+        <p class="block  mauto  space-rectangule"> </p>
+        <h2 class="m0  p0  f3  sm-f3  md-f4  lg-f5  color-01">PROFESIONAL</h2>
+    </div>
 </section>
-
 <!--Servicios-->
 <section class="container-fluid  allvh  fixed-top  font-color-bk  servicio" id="servicios">
     <h1 class="f3  color-01">Servicios</h1>
@@ -79,9 +79,9 @@
                 <picture class="ventajas-img-opc">
                     <img src="<?=base_url?>assets/img/like.png">
                 </picture>
-                <h1 class="item  ai-center  flex-auto  m1  f3">
-                    Impacta a tus clientes
-                </h1>
+                <p class="item  f2  sm-f1_5  md-f2  lg-f2_5  as-center  flex-auto">
+                    Deja que tus clientes te recomienden
+                </p>
             </div>
         </div>
         <div class="item  ph12  sm6  md6  lg4  flex-auto">
@@ -90,9 +90,9 @@
                 <picture class="ventajas-img-opc">
                     <img src="<?=base_url?>assets/img/sofa.png">
                 </picture>
-                <h1 class="item  ai-center  flex-auto  f3">
-                    Visita desde tu casa
-                </h1>
+                <p class="item  f2  sm-f1_5  md-f2  lg-f2_5  as-center  flex-auto">
+                    Tus clientes visitan desde su casa
+                </p>
             </div>
         </div>
         <div class="item  ph12  sm12  m12  lg4  flex-auto">
@@ -101,9 +101,9 @@
                 <picture class="ventajas-img-opc">
                     <img src="<?=base_url?>assets/img/palomitas.svg">
                 </picture>
-                <h1 class="item  ai-center  flex-auto  f3">
-                    Experiencias entretenidas 
-                </h1>
+                <p class="item  f2  sm-f1_5  md-f2  lg-f2_5  as-center  flex-auto">
+                    Tu oportunidad de ser diferente
+                </p>
             </div>
         </div>
     </div>
@@ -155,28 +155,13 @@
       </ul>
     </div>
     <div class="container  flex  ai-center  flex-wrap  detalles">
-        <div class="item  ph12  md8  color-01  flex-auto  detalles-propiedad">
+        <div class="item  ph12  color-01  flex-auto  detalles-propiedad">
             <h1 class="f3">Casa PlayaBonita</h1>
             <h2 class="f2">$3,000,000.00 MX</h2>
             <h2>Negociable</h2>
             <h3>publicado hace 2 días</h3>
         </div>
         <!--Tarjeta-->
-        <div class="item  ph12  md4  color-01  flex-auto  tarjeta">
-            <div class="item  tarjeta-content  f0">
-                <div class="item">
-                    <a class="boton-beneficios" href="https://sensacionweb.com/">Visita el inmueble</a>    
-                    <br>
-                    <a class="" href="https://sensacionweb.com/">Realidad Aumentada</a>    
-                </div>
-                <!--QR-->
-                <div class="item ">
-                    <picture>
-                        <img src="<?=base_url?>assets/img/qr.webp" style="width: 30%">
-                    </picture>
-                </div>
-            </div>
-        </div>
     </div>
     <div class="container  flex  flex-wrap   color-01  detalles-generales">
         <div class="item  ph12  color-01">
@@ -226,8 +211,8 @@
             <p class="p1">
                 Exclusivo Desarrollo ubicado a las afueras de la ciudad. 
             </p>
-            <div class="item ">
-                <iframe title="Tour Virtual" src="https://housifiles.000webhostapp.com/Web/CnRetoque/index.html"></iframe>
+            <div class="item">
+                <iframe class="iframe-tour" title="Tour Virtual" src="https://housifiles.000webhostapp.com/Web/CnRetoque/index.html"></iframe>
             </div>
         </div>
     </div>

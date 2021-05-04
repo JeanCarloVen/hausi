@@ -52,6 +52,7 @@ class UserController{
             $importeFormat = number_format($importe, 2,'.', ',');
             }
         }
+        require_once 'views/layouts/header_cotizador.php';
         require_once 'views/cotizador/cotizador.php';
         
     }
