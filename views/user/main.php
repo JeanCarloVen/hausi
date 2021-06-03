@@ -9,7 +9,7 @@
                 <article class="container  flex  flex-wrap  main-article">
                     <div class="item  ph12  md8  flex-auto">
                         <!--Texto-->
-                        <p class="f3  sm-f3  sm-p_25  md-f3_5  md-p1  lg-f4  lg-p1_5  font-color-bk">Tours virtuales para tu Inmobiliaria</p>
+                        <p class="f3  sm-f3  sm-p_25  md-f3_5  md-p1  lg-f4  lg-p2  font-color-bk">Tours virtuales para tu Inmobiliaria</p>
                         <p  class="p1  sm-f1_25  sm-p1_25  md-f1_5  color-05">Toda una nueva experiencia</p>
                         <!--Boton "Beneficios"-->
                         <a class="boton-beneficios" href="#ventajas">Beneficios</a>    
@@ -27,6 +27,12 @@
         </p>
         <p class="block  mauto  space-rectangule"> </p>
         <h2 class="m0  p0  f3  sm-f3  md-f4  lg-f5  color-01">PROFESIONAL</h2>
+        <br><br><br>    
+        <p class="f3  sm-f3  md-f4  lg-f3  color-05">Y</p>
+        <br><br>
+        <p class="f3  sm-f3  md-f4  lg-f3  color-05">ahora si lo deseas</p>
+        <p class="f3  sm-f3  md-f4  lg-f3  color-04">Realidad Aumentada</p>
+        <p class="f3  sm-f3  md-f4  lg-f3  color-05">a tu inmueble</p>
     </div>
 </section>
 <!--Servicios-->
